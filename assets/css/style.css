@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Mochiy Pop P One', sans-serif; */
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 {
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+.logo h2 span {
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #ca0245;
+}
+.logo img {
+    width: 50px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu nav ul,
+.menu nav li {
+    text-transform: uppercase;
+    list-style: none;
+}
+.menu nav ul {
+    display: flex;
+}
+.menu nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #727272;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.menu nav a:hover {
+    background-color: #ca0245;
+    color: white;
+    box-shadow: 1px 1px 2px #727272;
+    border-radius: 10px;
+    transition: ease-in 0.3s;
+}
+
+#banner {
+    background-image: url(../images/pilarkimetsu.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+.banner-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-headline h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    text-shadow: 5px 1px 0px #000;
+    max-width: 500px;
+    margin-top: 20px;
+}
+.banner-headline h2 {
+    color: white;
+    font-size: 25px;
+    text-shadow: 3px 1px 0px #000;
+    max-width: 400px;
+    margin-top: 25px;
+}
+.banner-options {
+    height: 210px;
+    display: flex;
+    z-index: 999;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #ffffff;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #fa0255;
+}
+.banner2 {
+    background-color: #e0024c;
+}
+.banner3 {
+    background-color: #7a012a;
+}
+
+.banner-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.banner-subtitle {
+    font-size: 11px;
+}
+.banner-options p {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-options a {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.banner-options a:hover {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px #7272724d;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    width: 70px;
+    height: 20px;
+    background-color: #f06291;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: ease-in 0.4s;
+}
+
+.last-eps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #72727262;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-title-text {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #ca0245;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+article .news-data {
+    display: flex;
+}
+article .news-posted-at {
+    background-color: #e0024c;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news-coments {
+    background-color: #7a012a;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+}
+article .news-thumb {
+    margin-top: 30px;
+}
+article .news-thumb img {
+    width: 100%;
+    height: auto;
+}
+article .news-title {
+    margin: 25px 0px 25px 0px;
+    color: #000;
+    font-size: 23px;
+}
+article .news-resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+/* aqui está com cursor pointer para não ser linkado à nada, porem ter a impressão de ser algo clicavel */
+article {
+    flex: 1;
+    cursor: pointer;
+    min-width: 300px;
+    margin-right: 20px;
+}
+aside .widget-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.widget-body .block {
+    height: 150px;
+    width: 150px;
+    background-color: #7a012a;
+    margin-top: 10px;
+}
+aside .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+aside .appoiment-title {
+    font-size: 13px;
+    color: #5c5c5c;
+}
+
+aside .contacts img {
+    width: 25px;
+}
+aside .contacts .desc {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5c5c5c41;
+}
+aside .contacts .desc .contact {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.footer-copy {
+    margin-top: 30px;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+}
+.footer-menu {
+    display: flex;
+}
+.fm-1,
+.fm-2,
+.fm-3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+.fm-1 {
+    background-color: #fa0255;
+}
+.fm-2 {
+    background-color: #e0024c;
+}
+.fm-3 {
+    background-color: #7a012a;
+}
+.footer-area {
+    display: flex;
+    color: #fff;
+}
+.flex-column {
+    flex-direction: column;
+}
+.footer-area-item {
+    flex: 1;
+}
+footer .widget-title-text {
+    color: #fff;
+}
+footer .footer-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+footer .footer-desc {
+    margin-top: 20px;
+}
+footer .area-text,
+.area-desc,
+.cont,
+.twitts {
+    color: #5c5c5c;
+}
+footer .area-text,
+.area-contacts {
+    font-size: 13px;
+}
+.area-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+footer .widget-body{
+    padding-right: 20px;
+}
+footer .area-contacts .cont {
+    display: flex;
+    margin-top: 3px;
+    justify-content: space-between;
+}
+footer .posts, .twitts{
+    margin-top: 20px;
+    font-size: 13px;
+}
+footer .posts span, .twitts span{
+   display: block;
+   font-size: 10px;
+   color: rgb(69, 69, 231);
+   margin-top: 3px;
+}
+.menu-mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line{
+    height: 3px;
+    background-color: #7a012a
+}
+@import url(responsividade.css);
